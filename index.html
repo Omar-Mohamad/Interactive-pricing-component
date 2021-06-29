@@ -28,9 +28,70 @@
     <title>Frontend Mentor | Interactive pricing component</title>
   </head>
   <body>
-    Simple, traffic-based pricing Sign-up for our 30-day trial. No credit card
-    required. Pageviews $ /month Monthly Billing Yearly Billing 25% discount
-    Unlimited websites 100% data ownership Email reports Start my trial
+    <section class="project-container">
+      <header class="project-header my-1">
+        <h1 class="project-title">Simple, traffic-based pricing</h1>
+
+        <p class="project-description">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+      </header>
+
+      <section class="pricing-component">
+        <article class="pricing-component-content">
+          <header class="pricing-component-header pt-2 px-2">
+            <h3 class="page-views"><span id="views"></span> Pageviews</h3>
+
+            <h3 class="pricing pb-1"><span class="price"></span> /month</h3>
+          </header>
+
+          <div class="pricing-component-body">
+            <input
+              class="price-range"
+              type="range"
+              name="price range"
+              value="3"
+              min="1"
+              max="5"
+              step="1"
+            />
+
+            <div class="pricing-component-discount py-2">
+              <h4 class="discount-option">Monthly Billing</h4>
+
+              <input
+                type="checkbox"
+                id="switch"
+                class="discount-switch"
+                name="theme"
+              />
+              <label class="mx-1" for="switch">Toggle</label>
+
+              <h4 class="discount-option">
+                Yearly Billing
+                <span class="discount-amount">
+                  -25%
+                  <!-- discount -->
+                </span>
+              </h4>
+            </div>
+          </div>
+          <footer class="pricing-component-footer">
+            <article class="footer-content p-2">
+              <ul class="pricing-component-features">
+                <li>Unlimited websites</li>
+                <li class="my-1">100% data ownership</li>
+                <li>Email reports</li>
+              </ul>
+
+              <button class="pricing-component-submit-btn mt-2 py-1 px-2">
+                Start my trial
+              </button>
+            </article>
+          </footer>
+        </article>
+      </section>
+    </section>
 
     <!-- attribution -->
 
